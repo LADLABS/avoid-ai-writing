@@ -4,6 +4,16 @@ All notable changes to this project are documented here.
 
 ---
 
+## [3.26.0] — 2026-08-24
+
+### Fixed
+
+- **Edit mode now limits rewrites to prose files (#101).** Source code,
+  configuration, and generated data are refused so prose-oriented edits cannot
+  corrupt structured content.
+
+---
+
 ## [3.25.2] — 2026-08-24
 
 ### Changed

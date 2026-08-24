@@ -19,7 +19,7 @@ A portable writing skill for [Claude Code](https://docs.anthropic.com/en/docs/cl
 **Three modes:**
 - **Rewrite** (default) — flags AI patterns and rewrites the text to fix them. A built-in second pass catches patterns that survived the first edit.
 - **Detect** — flags AI patterns without rewriting. Shows which flags are real problems vs. judgment calls. Useful when patterns might be intentional, when auditing content you don't want altered, or when you just want a quick scan.
-- **Edit** — edits a file in place (via the Edit tool) with minimal, targeted changes, preserving passages that are already human. Returns an edits-made + verification report, not the full file.
+- **Edit** — edits a prose file in place (via the Edit tool) with minimal, targeted changes, preserving passages that are already human. Source code, configuration, and generated data are refused because prose rewrites can corrupt structured content. Returns an edits-made + verification report, not the full file.
 
 An optional **voice profile** (casual / professional / technical / warm / blunt) sets how the prose should sound, independent of the audience context profile.
 
